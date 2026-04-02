@@ -1,0 +1,26 @@
+-- Estrutura base de reservas alinhada com o backend atual.
+CREATE TABLE IF NOT EXISTS reservas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    restaurante_id INT NOT NULL,
+    cliente_id INT NULL,
+    mesa_atribuida INT NULL,
+    nome_cliente VARCHAR(100) NOT NULL,
+    email_cliente VARCHAR(100) NULL,
+    telefone_cliente VARCHAR(20) NULL,
+    data_reserva DATE NOT NULL,
+    hora_reserva TIME NOT NULL,
+    quantidade_pessoas INT NOT NULL,
+    status ENUM('pendente', 'confirmado', 'no-show', 'cancelado') DEFAULT 'pendente',
+    origem ENUM('app', 'telefone', 'presencial') DEFAULT 'app',
+    observacoes TEXT NULL,
+    confirmacao_whatsapp TINYINT(1) DEFAULT 0,
+    confirmacao_data DATETIME NULL,
+    criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_reservas_restaurante FOREIGN KEY (restaurante_id) REFERENCES restaurantes(id) ON DELETE CASCADE,
+    CONSTRAINT fk_reservas_cliente FOREIGN KEY (cliente_id) REFERENCES clientes(id) ON DELETE SET NULL,
+    CONSTRAINT fk_reservas_mesa FOREIGN KEY (mesa_atribuida) REFERENCES mesas(id) ON DELETE SET NULL,
+    INDEX idx_reservas_restaurante_data_status (restaurante_id, data_reserva, status),
+    INDEX idx_reservas_mesa_data_hora (mesa_atribuida, data_reserva, hora_reserva),
+    INDEX idx_reservas_cliente (cliente_id)
+);

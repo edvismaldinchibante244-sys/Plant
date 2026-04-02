@@ -1,0 +1,11 @@
+.env
+.env.local
+src/.env
+src/.env.local
+
+debug_email.log
+storage/backups/
+
+vendor/
+node_modules/
+*.zip

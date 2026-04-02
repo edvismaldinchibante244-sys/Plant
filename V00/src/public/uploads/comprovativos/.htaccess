@@ -1,0 +1,15 @@
+# Bloquear listagem de diretório
+Options -Indexes
+
+# Bloquear execução de PHP e scripts — apenas imagens e PDFs permitidos
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(phtml|php3|php4|php5|php7|phar|shtml|cgi|pl|py|sh|asp|aspx|cfm)$">
+    Require all denied
+</FilesMatch>
+
+# Forçar download ou visualização inline apenas para tipos permitidos
+<FilesMatch "\.(jpg|jpeg|png|gif|pdf)$">
+    Require all granted
+</FilesMatch>

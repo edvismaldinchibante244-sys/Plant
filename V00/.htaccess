@@ -1,0 +1,13 @@
+# Redirecionar todas as requisições para src/public/
+RewriteEngine On
+RewriteBase /
+
+# Se a requisição não for para um arquivo ou diretório existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirecionar para src/public/
+RewriteRule ^(.*)$ src/public/$1 [L]
+
+# Se for直接访问 src/public
+RewriteRule ^$ src/public/ [L]

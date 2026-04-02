@@ -1,0 +1,433 @@
+2026-03-27 12:11:58 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 12:11:58 | produtos retornados=3
+2026-03-27 12:12:08 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 12:12:13 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 12:12:13 | produtos retornados=3
+2026-03-27 12:12:27 | restaurante_id=30 | categoria_id='36' | busca=''
+2026-03-27 12:12:27 | produtos retornados=1
+2026-03-27 12:12:29 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 12:12:29 | produtos retornados=2
+2026-03-27 12:15:56 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 12:15:56 | produtos retornados=3
+2026-03-27 12:21:18 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 12:21:18 | produtos retornados=3
+2026-03-27 12:22:01 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 12:22:01 | produtos retornados=3
+2026-03-27 15:10:55 | restaurante_id='30' | categoria_id=NULL | busca=''
+2026-03-27 15:10:55 | produtos retornados=3
+2026-03-27 15:11:07 | restaurante_id='30' | categoria_id=NULL | busca='2'
+2026-03-27 15:11:07 | restaurante_id='30' | categoria_id=NULL | busca='2'
+2026-03-27 15:11:09 | restaurante_id='30' | categoria_id=NULL | busca=''
+2026-03-27 15:11:09 | produtos retornados=3
+2026-03-27 15:11:09 | restaurante_id='30' | categoria_id=NULL | busca=''
+2026-03-27 15:11:09 | produtos retornados=3
+2026-03-27 15:11:13 | restaurante_id='30' | categoria_id=NULL | busca='2'
+2026-03-27 15:11:13 | restaurante_id='30' | categoria_id=NULL | busca='2'
+2026-03-27 15:19:58 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:19:58 | produtos retornados=3
+2026-03-27 15:20:02 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:20:02 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:20:04 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:20:04 | produtos retornados=3
+2026-03-27 15:20:04 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:20:04 | produtos retornados=3
+2026-03-27 15:20:06 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:20:06 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:20:13 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:20:13 | produtos retornados=3
+2026-03-27 15:20:14 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:20:14 | produtos retornados=3
+2026-03-27 15:20:15 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:20:15 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:20:16 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:20:16 | produtos retornados=3
+2026-03-27 15:20:16 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:20:16 | produtos retornados=3
+2026-03-27 15:59:40 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 15:59:40 | produtos retornados=3
+2026-03-27 15:59:43 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:59:43 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 15:59:43 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 15:59:43 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:00:29 | restaurante_id=30 | categoria_id='37' | busca='2'
+2026-03-27 16:00:29 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:00:30 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 16:00:30 | produtos retornados=2
+2026-03-27 16:00:30 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 16:00:30 | produtos retornados=2
+2026-03-27 16:00:34 | restaurante_id=30 | categoria_id='36' | busca=''
+2026-03-27 16:00:34 | produtos retornados=1
+2026-03-27 16:00:36 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 16:00:36 | produtos retornados=2
+2026-03-27 16:01:33 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:01:33 | produtos retornados=3
+2026-03-27 16:01:37 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:01:37 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:37 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:01:37 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:41 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:01:41 | produtos retornados=3
+2026-03-27 16:01:41 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:01:41 | produtos retornados=3
+2026-03-27 16:01:43 | restaurante_id=30 | categoria_id='36' | busca=''
+2026-03-27 16:01:43 | produtos retornados=1
+2026-03-27 16:01:44 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:01:44 | produtos retornados=3
+2026-03-27 16:01:49 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:01:49 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:49 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:01:49 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:56 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:01:56 | produtos retornados=3
+2026-03-27 16:01:56 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:01:56 | produtos retornados=3
+2026-03-27 16:01:58 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:01:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:58 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:01:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:58 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:01:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:58 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:01:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:58 | restaurante_id=30 | categoria_id=NULL | busca='fra'
+2026-03-27 16:01:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:58 | restaurante_id=30 | categoria_id=NULL | busca='fra'
+2026-03-27 16:01:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:01:59 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:01:59 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:02:00 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:02:00 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:02:00 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:02:00 | produtos retornados=3
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:02:00 | produtos retornados=3
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:02:00 | produtos retornados=3
+2026-03-27 16:02:00 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:02:00 | produtos retornados=3
+2026-03-27 16:02:01 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:02:01 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:01 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:02:01 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:01 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:02:01 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:02:01 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:02:01 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:07:00 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:07:00 | produtos retornados=3
+2026-03-27 16:07:03 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:07:03 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:07:03 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:07:03 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:07:06 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:07:06 | produtos retornados=3
+2026-03-27 16:07:06 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:07:06 | produtos retornados=3
+2026-03-27 16:07:15 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:07:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:07:16 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:07:16 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:07:17 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:07:17 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:07:17 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:07:17 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:08:22 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:08:22 | produtos retornados=3
+2026-03-27 16:08:25 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:08:25 | produtos retornados=3
+2026-03-27 16:08:30 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:08:30 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:08:30 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:08:30 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:31 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:31 | produtos retornados=3
+2026-03-27 16:09:35 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:35 | produtos retornados=3
+2026-03-27 16:09:39 | restaurante_id=30 | categoria_id='36' | busca=''
+2026-03-27 16:09:39 | produtos retornados=1
+2026-03-27 16:09:40 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 16:09:40 | produtos retornados=2
+2026-03-27 16:09:42 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:42 | produtos retornados=3
+2026-03-27 16:09:45 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:09:45 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:45 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:09:45 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:47 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:47 | produtos retornados=3
+2026-03-27 16:09:47 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:47 | produtos retornados=3
+2026-03-27 16:09:49 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:09:49 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:49 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:09:49 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:50 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:09:50 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:50 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:09:50 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:51 | restaurante_id=30 | categoria_id=NULL | busca='bat'
+2026-03-27 16:09:51 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:52 | restaurante_id=30 | categoria_id=NULL | busca='bat'
+2026-03-27 16:09:52 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:52 | restaurante_id=30 | categoria_id=NULL | busca='bata'
+2026-03-27 16:09:52 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:52 | restaurante_id=30 | categoria_id=NULL | busca='bata'
+2026-03-27 16:09:52 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca='bat'
+2026-03-27 16:09:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca='bat'
+2026-03-27 16:09:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:09:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca='ba'
+2026-03-27 16:09:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:09:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:09:58 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:58 | produtos retornados=3
+2026-03-27 16:09:58 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:58 | produtos retornados=3
+2026-03-27 16:09:59 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:59 | produtos retornados=3
+2026-03-27 16:09:59 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:09:59 | produtos retornados=3
+2026-03-27 16:10:02 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:10:02 | produtos retornados=3
+2026-03-27 16:10:02 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:10:02 | produtos retornados=3
+2026-03-27 16:10:04 | restaurante_id=30 | categoria_id=NULL | busca='@'
+2026-03-27 16:10:04 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:04 | restaurante_id=30 | categoria_id=NULL | busca='@'
+2026-03-27 16:10:04 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:04 | restaurante_id=30 | categoria_id=NULL | busca='@'
+2026-03-27 16:10:04 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:04 | restaurante_id=30 | categoria_id=NULL | busca='@'
+2026-03-27 16:10:04 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:04 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:10:04 | produtos retornados=3
+2026-03-27 16:10:04 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:10:04 | produtos retornados=3
+2026-03-27 16:10:05 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:10:05 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:05 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:10:05 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:07 | restaurante_id=30 | categoria_id=NULL | busca='2m'
+2026-03-27 16:10:07 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:07 | restaurante_id=30 | categoria_id=NULL | busca='2m'
+2026-03-27 16:10:07 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:07 | restaurante_id=30 | categoria_id=NULL | busca='2m'
+2026-03-27 16:10:07 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:07 | restaurante_id=30 | categoria_id=NULL | busca='2m'
+2026-03-27 16:10:07 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:08 | restaurante_id=30 | categoria_id=NULL | busca='2m'
+2026-03-27 16:10:08 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:08 | restaurante_id=30 | categoria_id=NULL | busca='2m'
+2026-03-27 16:10:08 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:12 | restaurante_id=30 | categoria_id=NULL | busca='2m c'
+2026-03-27 16:10:12 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:12 | restaurante_id=30 | categoria_id=NULL | busca='2m c'
+2026-03-27 16:10:12 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:12 | restaurante_id=30 | categoria_id=NULL | busca='2m c'
+2026-03-27 16:10:12 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:12 | restaurante_id=30 | categoria_id=NULL | busca='2m c'
+2026-03-27 16:10:12 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:13 | restaurante_id=30 | categoria_id=NULL | busca='2m cw'
+2026-03-27 16:10:13 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:13 | restaurante_id=30 | categoria_id=NULL | busca='2m cw'
+2026-03-27 16:10:13 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:14 | restaurante_id=30 | categoria_id=NULL | busca='2m c'
+2026-03-27 16:10:14 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:14 | restaurante_id=30 | categoria_id=NULL | busca='2m c'
+2026-03-27 16:10:14 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:14 | restaurante_id=30 | categoria_id=NULL | busca='2m ce'
+2026-03-27 16:10:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:15 | restaurante_id=30 | categoria_id=NULL | busca='2m ce'
+2026-03-27 16:10:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:15 | restaurante_id=30 | categoria_id=NULL | busca='2m cer'
+2026-03-27 16:10:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:15 | restaurante_id=30 | categoria_id=NULL | busca='2m cer'
+2026-03-27 16:10:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:15 | restaurante_id=30 | categoria_id=NULL | busca='2m cerv'
+2026-03-27 16:10:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:15 | restaurante_id=30 | categoria_id=NULL | busca='2m cerv'
+2026-03-27 16:10:15 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:16 | restaurante_id=30 | categoria_id=NULL | busca='2m cerve'
+2026-03-27 16:10:16 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:16 | restaurante_id=30 | categoria_id=NULL | busca='2m cerve'
+2026-03-27 16:10:16 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:17 | restaurante_id=30 | categoria_id=NULL | busca='2m cervej'
+2026-03-27 16:10:17 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:17 | restaurante_id=30 | categoria_id=NULL | busca='2m cervej'
+2026-03-27 16:10:17 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:17 | restaurante_id=30 | categoria_id=NULL | busca='2m cerveja'
+2026-03-27 16:10:17 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:17 | restaurante_id=30 | categoria_id=NULL | busca='2m cerveja'
+2026-03-27 16:10:17 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:18 | restaurante_id=30 | categoria_id=NULL | busca='2m cerveja'
+2026-03-27 16:10:18 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:10:18 | restaurante_id=30 | categoria_id=NULL | busca='2m cerveja'
+2026-03-27 16:10:18 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:44 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:14:44 | produtos retornados=3
+2026-03-27 16:14:46 | restaurante_id=30 | categoria_id='36' | busca=''
+2026-03-27 16:14:46 | produtos retornados=1
+2026-03-27 16:14:48 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:14:48 | produtos retornados=3
+2026-03-27 16:14:49 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:14:49 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:50 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:14:50 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:53 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:14:53 | produtos retornados=3
+2026-03-27 16:14:53 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:14:53 | produtos retornados=3
+2026-03-27 16:14:57 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:14:57 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:57 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:14:57 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:57 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:14:57 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:57 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:14:57 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:14:58 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:14:58 | produtos retornados=3
+2026-03-27 16:14:58 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:14:58 | produtos retornados=3
+2026-03-27 16:15:00 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 16:15:00 | produtos retornados=2
+2026-03-27 16:15:02 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:15:02 | produtos retornados=3
+2026-03-27 16:15:25 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:15:25 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:15:25 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:15:25 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+2026-03-27 16:17:12 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:17:12 | produtos retornados=3
+2026-03-27 16:17:15 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:17:15 | produtos retornados=3
+2026-03-27 16:17:20 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:17:20 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+#0 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\Model\Produto.php(248): PDOStatement->execute()
+#1 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\public\api\produto_listar.php(41): Produto->listarFiltrado(NULL, '2')
+#2 {main}
+2026-03-27 16:17:20 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:17:20 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+#0 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\Model\Produto.php(248): PDOStatement->execute()
+#1 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\public\api\produto_listar.php(41): Produto->listarFiltrado(NULL, '2')
+#2 {main}
+2026-03-27 16:17:22 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:17:22 | produtos retornados=3
+2026-03-27 16:17:22 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:17:22 | produtos retornados=3
+2026-03-27 16:17:23 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:17:23 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+#0 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\Model\Produto.php(248): PDOStatement->execute()
+#1 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\public\api\produto_listar.php(41): Produto->listarFiltrado(NULL, 'f')
+#2 {main}
+2026-03-27 16:17:23 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:17:23 | ERRO: SQLSTATE[HY093]: Invalid parameter number
+#0 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\Model\Produto.php(248): PDOStatement->execute()
+#1 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\public\api\produto_listar.php(41): Produto->listarFiltrado(NULL, 'f')
+#2 {main}
+2026-03-27 16:20:24 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:20:24 | produtos retornados=3
+2026-03-27 16:20:28 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:20:28 | ERRO: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+#0 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\Model\Produto.php(252): PDOStatement->bindParam(':busca', '%2%')
+#1 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\public\api\produto_listar.php(41): Produto->listarFiltrado(NULL, '2')
+#2 {main}
+2026-03-27 16:20:28 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:20:28 | ERRO: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+#0 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\Model\Produto.php(252): PDOStatement->bindParam(':busca', '%2%')
+#1 C:\Users\HP EliteBook 650\Desktop\Edvis\V00\src\public\api\produto_listar.php(41): Produto->listarFiltrado(NULL, '2')
+#2 {main}
+2026-03-27 16:27:03 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:03 | produtos retornados=3
+2026-03-27 16:27:06 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:27:06 | produtos retornados=1
+2026-03-27 16:27:06 | restaurante_id=30 | categoria_id=NULL | busca='2'
+2026-03-27 16:27:06 | produtos retornados=1
+2026-03-27 16:27:10 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:10 | produtos retornados=3
+2026-03-27 16:27:10 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:10 | produtos retornados=3
+2026-03-27 16:27:11 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:27:12 | produtos retornados=1
+2026-03-27 16:27:12 | restaurante_id=30 | categoria_id=NULL | busca='b'
+2026-03-27 16:27:12 | produtos retornados=1
+2026-03-27 16:27:13 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:13 | produtos retornados=3
+2026-03-27 16:27:13 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:13 | produtos retornados=3
+2026-03-27 16:27:14 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:27:14 | produtos retornados=2
+2026-03-27 16:27:14 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:27:14 | produtos retornados=2
+2026-03-27 16:27:18 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:27:18 | produtos retornados=2
+2026-03-27 16:27:18 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:27:18 | produtos retornados=2
+2026-03-27 16:27:18 | restaurante_id=30 | categoria_id=NULL | busca='fra'
+2026-03-27 16:27:18 | produtos retornados=1
+2026-03-27 16:27:18 | restaurante_id=30 | categoria_id=NULL | busca='fra'
+2026-03-27 16:27:18 | produtos retornados=1
+2026-03-27 16:27:21 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:27:21 | produtos retornados=2
+2026-03-27 16:27:21 | restaurante_id=30 | categoria_id=NULL | busca='fr'
+2026-03-27 16:27:21 | produtos retornados=2
+2026-03-27 16:27:21 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:27:21 | produtos retornados=2
+2026-03-27 16:27:21 | restaurante_id=30 | categoria_id=NULL | busca='f'
+2026-03-27 16:27:21 | produtos retornados=2
+2026-03-27 16:27:21 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:22 | produtos retornados=3
+2026-03-27 16:27:22 | restaurante_id=30 | categoria_id=NULL | busca=''
+2026-03-27 16:27:22 | produtos retornados=3
+2026-03-27 16:28:00 | restaurante_id=30 | categoria_id='36' | busca=''
+2026-03-27 16:28:00 | produtos retornados=1
+2026-03-27 16:28:03 | restaurante_id=30 | categoria_id='37' | busca=''
+2026-03-27 16:28:03 | produtos retornados=2
+2026-03-27 20:42:13 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:42:13 | produtos retornados=1
+2026-03-27 20:42:18 | restaurante_id='33' | categoria_id=NULL | busca='2'
+2026-03-27 20:42:18 | produtos retornados=1
+2026-03-27 20:42:18 | restaurante_id='33' | categoria_id=NULL | busca='2'
+2026-03-27 20:42:18 | produtos retornados=1
+2026-03-27 20:42:20 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:42:20 | produtos retornados=1
+2026-03-27 20:42:20 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:42:20 | produtos retornados=1
+2026-03-27 20:43:11 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:43:11 | produtos retornados=1
+2026-03-27 20:50:47 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:50:47 | produtos retornados=1
+2026-03-27 20:51:00 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:51:00 | produtos retornados=1
+2026-03-27 20:51:05 | restaurante_id='33' | categoria_id='38' | busca=''
+2026-03-27 20:51:05 | produtos retornados=1
+2026-03-27 20:51:05 | restaurante_id='33' | categoria_id='38' | busca=''
+2026-03-27 20:51:05 | produtos retornados=1
+2026-03-27 20:51:23 | restaurante_id='33' | categoria_id='38' | busca=''
+2026-03-27 20:51:23 | produtos retornados=1
+2026-03-27 20:51:26 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-27 20:51:26 | produtos retornados=1
+2026-03-29 12:22:26 | restaurante_id='33' | categoria_id=NULL | busca=''
+2026-03-29 12:22:26 | produtos retornados=1
+2026-03-29 12:22:48 | restaurante_id='33' | categoria_id='38' | busca=''
+2026-03-29 12:22:48 | produtos retornados=1
+2026-03-29 13:32:59 | restaurante_id=33 | categoria_id=NULL | busca=''
+2026-03-29 13:32:59 | produtos retornados=1
+2026-03-29 13:33:09 | restaurante_id=33 | categoria_id=NULL | busca=''
+2026-03-29 13:33:09 | produtos retornados=1
+2026-03-29 14:46:13 | restaurante_id=34 | categoria_id=NULL | busca=''
+2026-03-29 14:46:13 | produtos retornados=1
+2026-03-29 14:46:18 | restaurante_id=34 | categoria_id=NULL | busca=''
+2026-03-29 14:46:18 | produtos retornados=1
+2026-03-29 14:46:23 | restaurante_id=34 | categoria_id=NULL | busca=''
+2026-03-29 14:46:23 | produtos retornados=1
