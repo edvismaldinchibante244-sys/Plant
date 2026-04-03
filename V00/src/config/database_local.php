@@ -7,10 +7,10 @@
 
 class Database
 {
-    private $host = '127.0.0.1'; // melhor que localhost
-    private $db_name = 'restaurante_saas';
-    private $username = 'root';
-    private $password = '';
+    private $host = 'dpg-d77angeslomc73dcoar0-a'; // melhor que localhost
+    private $db_name = 'dpg-d77angeslomc73dcoar0-a/saas_p75y';
+    private $username = 'saas_p75y_user';
+    private $password = 'G7J4zekw5FNIMI4GGPVfpcXeoEryAYYt';
 
     private $conn;
 
