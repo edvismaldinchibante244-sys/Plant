@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
-const mysql = require('mysql2');
+const { Client } = require('pg'); // ✅ TROCA MYSQL → POSTGRESQL
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -16,17 +16,18 @@ const io = socketIo(server, {
 app.use(bodyParser.json());
 app.use(express.static('.'));
 
-const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'restaurante_saas' // Adjust to your DB
+// ✅ CONEXÃO COM POSTGRESQL (RENDER)
+const db = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
-db.connect(err => {
-  if (err) throw err;
-  console.log('MySQL Connected');
-});
+// ✅ NÃO QUEBRA O SERVIDOR SE DER ERRO
+db.connect()
+  .then(() => console.log('PostgreSQL Connected'))
+  .catch(err => console.error('Erro ao conectar:', err.message));
 
 // Socket connections
 io.on('connection', socket => {
@@ -45,26 +46,38 @@ io.on('connection', socket => {
 // HTTP endpoint from PHP
 app.post('/notify', (req, res) => {
   const { restaurante_id, pedido } = req.body || {};
-  const numeroPedido = pedido && (pedido.numero_pedido || pedido.numero || pedido.id) ? (pedido.numero_pedido || pedido.numero || pedido.id) : 'N/A';
-  const mesa = pedido && (pedido.mesa || pedido.mesa_numero || pedido.mesa_id) ? (pedido.mesa || pedido.mesa_numero || pedido.mesa_id) : '-';
-  console.log(`[${new Date().toISOString()}] Novo pedido recebido: ${numeroPedido} | Mesa: ${mesa} | Restaurante: ${restaurante_id || 'N/A'}`);
-  
-  // Emit to all connected clients
+
+  const numeroPedido =
+    pedido?.numero_pedido ||
+    pedido?.numero ||
+    pedido?.id ||
+    'N/A';
+
+  const mesa =
+    pedido?.mesa ||
+    pedido?.mesa_numero ||
+    pedido?.mesa_id ||
+    '-';
+
+  console.log(
+    `[${new Date().toISOString()}] Novo pedido: ${numeroPedido} | Mesa: ${mesa} | Restaurante: ${restaurante_id || 'N/A'}`
+  );
+
+  // 🔥 ENVIA PARA TODOS
   io.emit('novo_pedido', {
     pedido,
     timestamp: new Date().toISOString()
   });
-  
-  // Or per room
+
+  // 🔥 ENVIA POR RESTAURANTE
   if (restaurante_id) {
     io.to(`restaurante_${restaurante_id}`).emit('novo_pedido', pedido);
   }
-  
+
   res.json({ success: true });
 });
 
 const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`WebSocket server on port ${PORT}`);
-  console.log('Run: npm start');
 });
