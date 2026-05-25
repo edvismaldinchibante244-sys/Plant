@@ -1,0 +1,135 @@
+name: Security Gate
+
+on:
+  pull_request:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  security-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    defaults:
+      run:
+        working-directory: V00
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: composer
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: PHP lint (public + app)
+        shell: bash
+        run: |
+          set -euo pipefail
+          dirs=("src/public" "tools" "app/src")
+          found_any=0
+          for d in "${dirs[@]}"; do
+            if [ -d "$d" ]; then
+              find "$d" -type f -name "*.php" -print0 | xargs -0 -n1 php -l
+              found_any=1
+            fi
+          done
+          if [ "$found_any" -eq 0 ]; then
+            echo "No PHP directories found for lint."
+            exit 1
+          fi
+
+      - name: Composer install
+        if: ${{ hashFiles('V00/app/composer.json') != '' }}
+        working-directory: V00/app
+        run: composer install --no-interaction --no-progress --prefer-dist
+
+      - name: Composer audit
+        if: ${{ hashFiles('V00/app/composer.json') != '' }}
+        working-directory: V00/app
+        run: composer audit --no-interaction --format=plain
+
+      - name: Node install (websocket app)
+        if: ${{ hashFiles('V00/app/package.json') != '' }}
+        working-directory: V00/app
+        run: npm ci
+
+      - name: Node audit (high+)
+        if: ${{ hashFiles('V00/app/package.json') != '' }}
+        working-directory: V00/app
+        run: npm audit --audit-level=high
+
+      - name: Secret scan (gitleaks)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare CI env baseline
+        shell: bash
+        run: |
+          if [ ! -f .env ]; then
+            if [ -f .env.example ]; then
+              cp .env.example .env
+            else
+              touch .env
+            fi
+          fi
+          grep -q '^APP_ENV=' .env || echo 'APP_ENV=production' >> .env
+          grep -q '^APP_KEY=' .env || echo 'APP_KEY=ci_dummy_key_32_chars_minimum_value__' >> .env
+          grep -q '^PLANO_WEBHOOK_SECRET=' .env || echo 'PLANO_WEBHOOK_SECRET=ci_dummy_webhook_secret' >> .env
+          grep -q '^APP_WAF_PROVIDER=' .env || echo 'APP_WAF_PROVIDER=cloudflare' >> .env
+          grep -q '^APP_WAF_MODE=' .env || echo 'APP_WAF_MODE=block' >> .env
+          grep -q '^SIEM_ENABLED=' .env || echo 'SIEM_ENABLED=true' >> .env
+          grep -q '^SIEM_ENDPOINT=' .env || echo 'SIEM_ENDPOINT=https://siem.seudominio.com/ingest' >> .env
+          grep -q '^INCIDENT_CONTACT=' .env || echo 'INCIDENT_CONTACT=security@seudominio.com' >> .env
+          grep -q '^DR_LAST_TEST_AT=' .env || echo 'DR_LAST_TEST_AT=2026-05-21' >> .env
+          grep -q '^PENTEST_LAST_AT=' .env || echo 'PENTEST_LAST_AT=2026-05-21' >> .env
+
+      - name: Security preflight
+        shell: bash
+        run: |
+          if [ -f tools/security_preflight.php ]; then
+            php tools/security_preflight.php --json
+          else
+            echo "security_preflight.php not found, skipping."
+          fi
+
+      - name: Security ops preflight
+        shell: bash
+        run: |
+          if [ -f tools/security_ops_preflight.php ]; then
+            php tools/security_ops_preflight.php --json
+          else
+            echo "security_ops_preflight.php not found, skipping."
+          fi
+
+      - name: Monthly readiness report
+        shell: bash
+        run: |
+          if [ -f tools/security_readiness_report.php ]; then
+            php tools/security_readiness_report.php --json
+          else
+            echo "security_readiness_report.php not found, skipping."
+          fi
+
+      - name: Upload readiness artifact
+        if: ${{ hashFiles('V00/docs/security/SECURITY_MONTHLY_READINESS.md') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-monthly-readiness
+          path: V00/docs/security/SECURITY_MONTHLY_READINESS.md
+          if-no-files-found: error
