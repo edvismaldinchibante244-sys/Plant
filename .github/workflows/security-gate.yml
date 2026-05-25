@@ -40,21 +40,36 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          find src/public app/src tools -type f -name "*.php" -print0 | xargs -0 -n1 php -l
+          dirs=("src/public" "tools" "app/src")
+          found_any=0
+          for d in "${dirs[@]}"; do
+            if [ -d "$d" ]; then
+              find "$d" -type f -name "*.php" -print0 | xargs -0 -n1 php -l
+              found_any=1
+            fi
+          done
+          if [ "$found_any" -eq 0 ]; then
+            echo "No PHP directories found for lint."
+            exit 1
+          fi
 
       - name: Composer install
+        if: ${{ hashFiles('V00/app/composer.json') != '' }}
         working-directory: V00/app
         run: composer install --no-interaction --no-progress --prefer-dist
 
       - name: Composer audit
+        if: ${{ hashFiles('V00/app/composer.json') != '' }}
         working-directory: V00/app
         run: composer audit --no-interaction --format=plain
 
       - name: Node install (websocket app)
+        if: ${{ hashFiles('V00/app/package.json') != '' }}
         working-directory: V00/app
         run: npm ci
 
       - name: Node audit (high+)
+        if: ${{ hashFiles('V00/app/package.json') != '' }}
         working-directory: V00/app
         run: npm audit --audit-level=high
 
@@ -79,4 +94,3 @@ jobs:
           name: security-monthly-readiness
           path: V00/docs/security/SECURITY_MONTHLY_READINESS.md
           if-no-files-found: error
-
