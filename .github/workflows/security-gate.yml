@@ -77,7 +77,6 @@ jobs:
         uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITLEAKS_CONFIG: V00/.gitleaks.toml
 
       - name: Security preflight
         run: php tools/security_preflight.php --json
