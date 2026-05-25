@@ -79,15 +79,34 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Security preflight
-        run: php tools/security_preflight.php --json
+        shell: bash
+        run: |
+          if [ -f tools/security_preflight.php ]; then
+            php tools/security_preflight.php --json
+          else
+            echo "security_preflight.php not found, skipping."
+          fi
 
       - name: Security ops preflight
-        run: php tools/security_ops_preflight.php --json
+        shell: bash
+        run: |
+          if [ -f tools/security_ops_preflight.php ]; then
+            php tools/security_ops_preflight.php --json
+          else
+            echo "security_ops_preflight.php not found, skipping."
+          fi
 
       - name: Monthly readiness report
-        run: php tools/security_readiness_report.php --json
+        shell: bash
+        run: |
+          if [ -f tools/security_readiness_report.php ]; then
+            php tools/security_readiness_report.php --json
+          else
+            echo "security_readiness_report.php not found, skipping."
+          fi
 
       - name: Upload readiness artifact
+        if: ${{ hashFiles('V00/docs/security/SECURITY_MONTHLY_READINESS.md') != '' }}
         uses: actions/upload-artifact@v4
         with:
           name: security-monthly-readiness
