@@ -78,6 +78,27 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Prepare CI env baseline
+        shell: bash
+        run: |
+          if [ ! -f .env ]; then
+            if [ -f .env.example ]; then
+              cp .env.example .env
+            else
+              touch .env
+            fi
+          fi
+          grep -q '^APP_ENV=' .env || echo 'APP_ENV=production' >> .env
+          grep -q '^APP_KEY=' .env || echo 'APP_KEY=ci_dummy_key_32_chars_minimum_value__' >> .env
+          grep -q '^PLANO_WEBHOOK_SECRET=' .env || echo 'PLANO_WEBHOOK_SECRET=ci_dummy_webhook_secret' >> .env
+          grep -q '^APP_WAF_PROVIDER=' .env || echo 'APP_WAF_PROVIDER=cloudflare' >> .env
+          grep -q '^APP_WAF_MODE=' .env || echo 'APP_WAF_MODE=block' >> .env
+          grep -q '^SIEM_ENABLED=' .env || echo 'SIEM_ENABLED=true' >> .env
+          grep -q '^SIEM_ENDPOINT=' .env || echo 'SIEM_ENDPOINT=https://siem.seudominio.com/ingest' >> .env
+          grep -q '^INCIDENT_CONTACT=' .env || echo 'INCIDENT_CONTACT=security@seudominio.com' >> .env
+          grep -q '^DR_LAST_TEST_AT=' .env || echo 'DR_LAST_TEST_AT=2026-05-21' >> .env
+          grep -q '^PENTEST_LAST_AT=' .env || echo 'PENTEST_LAST_AT=2026-05-21' >> .env
+
       - name: Security preflight
         shell: bash
         run: |
